@@ -82,29 +82,31 @@ Wynik końcowy: $S=2\pi\cdot \frac{3\sqrt2}{2}=\boxed{3\pi\sqrt2}$.
 
 Słowny opis obszaru: szukamy środka ciężkości jednorodnej półkuli pełnej promienia $R$, leżącej nad płaszczyzną $xy$.
 
-Uzasadnienie wyboru współrzędnych: wybieramy współrzędne sferyczne, ponieważ obszar jest częścią kuli. Przyjmujemy $x=\rho\sin\varphi\cos\theta$, $y=\rho\sin\varphi\sin\theta$, $z=\rho\cos\varphi$, gdzie $0\leq \rho\leq R$, $0\leq \varphi\leq \frac{\pi}{2}$, $0\leq \theta\leq 2\pi$.
+Uzasadnienie wyboru współrzędnych: wybieramy współrzędne sferyczne, ponieważ obszar jest częścią kuli. Przyjmujemy
+$x=r\cos\psi\cos\varphi$, $y=r\cos\psi\sin\varphi$, $z=r\sin\psi$ oraz
+$dV=r^2\cos\psi\,dr\,d\psi\,d\varphi$, gdzie $0\leq r\leq R$, $0\leq \psi\leq \frac{\pi}{2}$, $0\leq \varphi\leq 2\pi$.
 
 Z symetrii $\bar{x}=0$ oraz $\bar{y}=0$.
 
-Objętość: $V=\int_0^{2\pi}\int_0^{\pi/2}\int_0^R \rho^2\sin\varphi\,d\rho\,d\varphi\,d\theta$.
+Objętość: $V=\int_0^{2\pi}\int_0^{\pi/2}\int_0^R r^2\cos\psi\,dr\,d\psi\,d\varphi$.
 
-Wynik całki wewnętrznej objętości: $\int_0^R \rho^2\sin\varphi\,d\rho=\frac{R^3}{3}\sin\varphi$.
+Wynik całki wewnętrznej objętości: $\int_0^R r^2\cos\psi\,dr=\frac{R^3}{3}\cos\psi$.
 
-Wynik kolejnej całki objętości: $\int_0^{\pi/2}\frac{R^3}{3}\sin\varphi\,d\varphi=\frac{R^3}{3}$.
+Wynik kolejnej całki objętości: $\int_0^{\pi/2}\frac{R^3}{3}\cos\psi\,d\psi=\frac{R^3}{3}$.
 
 Wynik objętości: $V=\frac{2\pi R^3}{3}$.
 
-Moment względem płaszczyzny $xy$: $M_{xy}=\int_0^{2\pi}\int_0^{\pi/2}\int_0^R \rho\cos\varphi\cdot \rho^2\sin\varphi\,d\rho\,d\varphi\,d\theta$.
+Moment względem płaszczyzny $xy$: $M_{xy}=\int_0^{2\pi}\int_0^{\pi/2}\int_0^R r\sin\psi\cdot r^2\cos\psi\,dr\,d\psi\,d\varphi$.
 
-Wynik całki wewnętrznej momentu: $\int_0^R \rho^3\cos\varphi\sin\varphi\,d\rho=\frac{R^4}{4}\cos\varphi\sin\varphi$.
+Wynik całki wewnętrznej momentu: $\int_0^R r^3\sin\psi\cos\psi\,dr=\frac{R^4}{4}\sin\psi\cos\psi$.
 
-Wynik kolejnej całki momentu: $\int_0^{\pi/2}\frac{R^4}{4}\cos\varphi\sin\varphi\,d\varphi=\frac{R^4}{8}$.
+Wynik kolejnej całki momentu: $\int_0^{\pi/2}\frac{R^4}{4}\sin\psi\cos\psi\,d\psi=\frac{R^4}{8}$.
 
 Wynik momentu: $M_{xy}=2\pi\cdot \frac{R^4}{8}=\frac{\pi R^4}{4}$.
 
 Współrzędna $\bar{z}$: $\bar{z}=\frac{M_{xy}}{V}=\frac{\pi R^4/4}{2\pi R^3/3}=\frac{3R}{8}$.
 
-Wynik końcowy: $\boxed{S=\left(0,0,\frac{3R}{8}\right)}$.
+Wynik końcowy: $\boxed{C=\left(0,0,\frac{3R}{8}\right)}$.
 
 ---
 
@@ -174,7 +176,7 @@ Zadanie 2. $\boxed{S=R^2(\pi-2)}$.
 
 Zadanie 3. $\boxed{S=3\pi\sqrt2}$.
 
-Zadanie 4. $\boxed{S=\left(0,0,\frac{3R}{8}\right)}$.
+Zadanie 4. $\boxed{C=\left(0,0,\frac{3R}{8}\right)}$.
 
 Zadanie 5. $\boxed{S=\left(0,\frac{12}{7},\frac{8}{7}\right)}$.
 
